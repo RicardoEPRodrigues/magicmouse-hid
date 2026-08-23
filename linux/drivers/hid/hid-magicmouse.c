@@ -579,8 +579,10 @@ static int magicmouse_raw_event(struct hid_device *hdev,
 		 * size is minimum 14 but could be any multpiple of 14+ii*8 based on
 		 * how many fingers are detected. e.g for 1 finger, size=22 for
 		 * 2 fingers, size=30 and so on.
+		 *
+		 * Size is either 8 (no touches) or (14 + 8 * N).
 		 */
-		if (size > 14 && ((size - 14) % 8) != 0)
+		if (size != 8 && (size < 14 || (size - 14) % 8 != 0))
             return 0;
         npoints = (size - 14) / 8;
         if (npoints > 15) {
