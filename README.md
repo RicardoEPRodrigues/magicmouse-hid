@@ -5,6 +5,10 @@
 >
 > Furthermore, this **repository is in Maintenance mode**, meaning that no new features are planned.
 
+This repository contains the Linux hid-magicmouse driver with Magic Trackpad 2 and Magic Mouse 2 support for Linux 4.18 onwards. For older kernels, you might have to diff and backport. It also contains 2 fixes to the Magic Mouse 2 regarding Bluetooth random disconnections and no scroll after a Bluetooth reconnection.
+
+This driver is based on the work of @robotrovsky, @svartalf, @0xABAD, and probably others. Thank you!
+
 ### Gestures on modern Wayland desktops
 
 If you already use the in-tree driver on kernel 5.15 or newer and want
@@ -14,10 +18,6 @@ see
 It adds scrolling, pinch zoom, middle click, Back/Forward, and GNOME
 three-finger gestures without replacing the kernel driver. This repository is
 credited there as a technical reference.
-
-This repository contains the Linux hid-magicmouse driver with Magic Trackpad 2 and Magic Mouse 2 support for Linux 4.18 onwards. For older kernels, you might have to diff and backport. It also contains 2 fixes to the Magic Mouse 2 regarding Bluetooth random disconnections and no scroll after a Bluetooth reconnection.
-
-This driver is based on the work of @robotrovsky, @svartalf, @0xABAD, and probably others. Thank you!
 
 ## Ubuntu (and derivatives)
 
