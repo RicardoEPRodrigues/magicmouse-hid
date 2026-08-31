@@ -9,6 +9,16 @@ This repository contains the Linux hid-magicmouse driver with Magic Trackpad 2 a
 
 This driver is based on the work of @robotrovsky, @svartalf, @0xABAD, and probably others. Thank you!
 
+### Gestures on modern Wayland desktops
+
+If you already use the in-tree driver on kernel 5.15 or newer and want
+userspace gestures for the Bluetooth/Lightning Magic Mouse 2 (`004C:0269`),
+see
+[`Salacfrantisek/magic-mouse-wayland-gestures`](https://github.com/Salacfrantisek/magic-mouse-wayland-gestures).
+It adds scrolling, pinch zoom, middle click, Back/Forward, and GNOME
+three-finger gestures without replacing the kernel driver. This repository is
+credited there as a technical reference.
+
 ## Ubuntu (and derivatives)
 
 A `.deb` file is now available in Releases. Get the [latest version here](https://github.com/RicardoEPRodrigues/magicmouse-hid/releases/latest).
